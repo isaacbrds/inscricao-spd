@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>RailsRuby3</title>
+    <title>Sistema de Inscrições</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
@@ -13,14 +13,15 @@
 
     <nav id="menu">
       <ul>
+        
         <li>
-          <a href='#'> Principal</a>
+          <%= link_to 'Principal', root_path %>
         </li>  
         <li>
           <a href='#'> Sobre</a>
         </li>
         <li>
-          <a href='#'> Seja Aluno</a>
+          <%= link_to 'Seja Aluno', new_subscript_path %>
         </li>
         <li>
           <a href='#'> Alunos </a>    
