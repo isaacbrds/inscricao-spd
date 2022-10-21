@@ -1,1 +1,14 @@
-new
+<h1 id='h1'> INSCRIÇÃO SUPER DESENVOLVEDOR </h1>
+<h2 id='h2'> Seu futuro e sua família agradecem!</h2>
+
+<div id='form'>
+  <%= form_for @subscript do |f| %>
+  <%= f.text_field :name, placeholder: "Nome" %> <br/>
+  <%= f.text_field :email, placeholder: "Email" %> <br/>
+  <%= f.text_field :phone, placeholder: "Telefone" %> <br/>
+  <%= f.text_area :description, placeholder: "Descrição" %> <br/>
+  <%= f.select :language, ["Javascript", "Ruby", "Python", "Java", "PHP"], include_blank: "Linguagens" %> <br/>
+  <%= f.select :schooling, ["Fundamental", "Médio", "Superior incompleto", "Superior completo"], include_blank: "Escolaridade" %> <br/>
+  <%= f.submit "Enviar" %> <br/>
+  <% end %>
+</div>
