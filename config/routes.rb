@@ -4,7 +4,7 @@ Rails.application.routes.draw do
   resources :subscripts, only: %i(index create new)
   namespace :api do
     namespace :v1 do
-      resources :subscripts, only: :index
+      resources :subscripts, only: %i(index create)
     end
   end
   # Defines the root path route ("/")
